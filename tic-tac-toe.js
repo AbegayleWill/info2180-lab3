@@ -1,4 +1,5 @@
 window.onload = function(){windowLoad()}
+    //loads window
     function windowLoad(){
         var blocks = document.getElementById("board").childNodes;
         blocks.forEach(element => {element.className = "square";});
@@ -27,7 +28,18 @@ window.onload = function(){windowLoad()}
             //console.log("button clicked");
         }
 
-
+        
+        blocks.forEach(function(element){
+            //allows hover
+            element.addEventListener("mouseover", function(hoverPlay){
+                hoverPlay.target.classList.add("hover");
+            });
+    
+            //allows hover colour to be removed
+            element.addEventListener("mouseout", function(hoverPlay){
+                hoverPlay.target.classList.remove("hover");
+            })
+        })
        
 
 }
