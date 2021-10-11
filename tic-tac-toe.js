@@ -125,17 +125,9 @@ window.onload = function(){windowLoad()}
               }
             }
 
-            function handleRestartGame() {
-              gameState = [];
-              blocks.innerHTML = currentPlayer
-              document.querySelectorAll("board")
-                         .forEach(element => element.innerHTML = "");
-          }
-          document.querySelector(".btn").addEventListener('click', handleRestartGame);
-
-          };
+            
           
           
         
 
-}
+}}
